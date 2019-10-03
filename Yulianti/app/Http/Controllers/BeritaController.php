@@ -3,24 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\KategoriBerita;
+use App\Berita;
 
-class KategoriBeritaController extends Controller
+class BeritaController extends Controller
 {
     public function index(){
     	//Eloquent 
-    	$listKategoriBerita=KategoriBerita::all();  //select * from kategori_artikel
+    	$listBerita=Berita::all();  //select * from kategori_artikel
 
     	//blade
-    	return view('kategori_berita.index',compact('listKategoriBerita'));
+    	return view('berita.index',compact('listBerita'));
     	//return view( view: 'kategori_artikel.index')->with('"data',$listKategoriArtikel);
     }
 
     public function show($id){
     	//Eloquent
     	//$KategoriArtikel=KategoriArtikel::where('id',$id)->first(); // select * from kategori_artikel where id=$id limit I
-    	$KategoriBerita=KategoriBerita::find($id);
+    	$Berita=Berita::find($id);
 
-    	return view('kategori_berita.show',compact('KategoriBerita'));
+    	return view('berita.show',compact('Berita'));
     }
 }

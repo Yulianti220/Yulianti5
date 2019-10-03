@@ -5,39 +5,43 @@
 	<div class="row justify-content-center">
 		<div class="col-md-8">
 			<div class="card">
-				<div class="card-header">list Kategori Berita</div>
+				<div class="card-header">Galeri</div>
 
 				<div class="card-body">
 
 					<div class="from-group row">
 					 <label class="col-md-4 col-from-label text-md-right">ID</label>
-					 <label class="col-md-4 col-from-label text-md-left">{!! $KategoriBerita->
-					 id !!}</label>
+					 <label class="col-md-4 col-from-label text-md-left">{!! $Galeri->id !!}</label>
 					</div>
 
 					<div class="from-group row">
 					 <label class="col-md-4 col-from-label text-md-right">Nama</label>
-					 <label class="col-md-4 col-from-label text-md-left">{!! $KategoriBerita->nama !!}</label>
+					 <label class="col-md-4 col-from-label text-md-left">{!! $Galeri->nama !!}</label>
+					</div>
+
+					<div class="from-group row">
+					 <label class="col-md-4 col-from-label text-md-right">Keterangan</label>
+					 <label class="col-md-4 col-from-label text-md-left">{!! $Galeri->keterangan !!}</label>
 					</div>
 
 					<div class="from-group row">
 					 <label class="col-md-4 col-from-label text-md-right">Users Id</label>
-					 <label class="col-md-4 col-from-label text-md-left">{!! $KategoriBerita->users_id !!}</label>
+					 <label class="col-md-4 col-from-label text-md-left">{!! $Galeri->users_id !!}</label>
 					</div>
 
 					<div class="from-group row">
 					 <label class="col-md-4 col-from-label text-md-right">Create</label>
-					 <label class="col-md-4 col-from-label text-md-left">{!! $KategoriBerita->created_at->format('d/m/Y H:i') !!}</label>
+					 <label class="col-md-4 col-from-label text-md-left">{!! $Galeri->created_at->format('d/m/Y H:i') !!}</label>
 					</div>
 
 					<div class="from-group row">
 					 <label class="col-md-4 col-from-label text-md-right">Update</label>
-					 <label class="col-md-4 col-from-label text-md-left">{!! $KategoriBerita->updated_at->format('d/m/Y H:i') !!}</label>
+					 <label class="col-md-4 col-from-label text-md-left">{!! $Galeri->updated_at->format('d/m/Y H:i') !!}</label>
 					</div>
 
 					<div class="from-group row mb-0">
 							<div class="col-md-0 offset-md-4">
-								<a href="{!! route('kategori_berita.index') !!}" class="btn btn-primary">
+								<a href="{!! route('galeri.index') !!}" class="btn btn-primary">
 							 Back
 								</a>
 							</div>
