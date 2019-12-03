@@ -27,9 +27,10 @@
                         <td>{!! $item->id !!}</td>
                         <td>{!! $item->nama !!}</td>
                         <td>{!! $item->keterangan !!}</td>
-                        <td>{!! $item->path !!}</td>
+                        <td><img src="{!! asset($item->path) !!}" width="100px"> </td>
                         <td>{!! $item->users_id !!}</td>
                         <td>{!! $item->created_at->format('d/m/Y H:i:s') !!}</td>
+                        <td>{!! $item->updated_at->format('d/m/Y H:i:s') !!}</td>
                         <td>
                         <a href="{!! route('galeri.show' ,[$item->id]) !!}"  
                                 class="btn btn-sm btn-info">Lihat</a>
